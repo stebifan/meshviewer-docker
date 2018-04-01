@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 #Install curl
-RUN apt-get update && apt-get install -y curl
+RUN apt-get update && apt-get install -y curl apt-transport-https
 
 
 # Install yarn
