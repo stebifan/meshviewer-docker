@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 
 #Install curl
-RUN apt-get update && apt-get install -y curl apt-transport-https
-
+RUN apt-get update && apt-get install -y curl apt-transport-https npm nodejs
+RUN npm install gulp-cli
 
 # Install yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
