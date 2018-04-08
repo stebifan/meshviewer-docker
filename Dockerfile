@@ -7,5 +7,6 @@ FROM node:latest
 #RUN yarn global add gulp-cli
 #RUN gulp
 COPY start.sh /start.sh
+RUN chmod +x /start.sh
 VOLUME /opt/meshviewer/data
 CMD ["/start.sh"]
