@@ -15,7 +15,7 @@ RUN npm install --global grunt-cli && \
     gem install --no-rdoc --no-ri compass
 
 # Build Meshviewer
-RUN git clone https://github.com/ffrgb/meshviewer.git /opt/meshviewer/
+RUN git clone https://github.com/Freifunk-Troisdorf/meshviewer.git /opt/meshviewer/
 
 WORKDIR /opt/meshviewer
 RUN npm install gulp -D && \
