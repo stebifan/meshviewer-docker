@@ -22,4 +22,8 @@ RUN npm install gulp -D && \
 	yarn && \
 	yarn global add gulp-cli
 
+COPY start.sh /
+RUN chmod +x /start.sh
+
+ENTRYPOINT ["/start.sh"]
 #RUN gulp
