@@ -17,7 +17,6 @@ RUN npm install --global grunt-cli && \
 # Build Meshviewer
 #RUN git clone https://github.com/Freifunk-Troisdorf/meshviewer.git /opt/meshviewer/
 
-WORKDIR /opt/meshviewer
 #RUN npm install gulp -D && \
 #	yarn && \
 #	yarn global add gulp-cli
