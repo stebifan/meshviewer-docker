@@ -1,5 +1,7 @@
 #!/bin/sh
-git clone https://github.com/Freifunk-Troisdorf/meshviewer.git /opt/meshviewer/
+git clone https://github.com/Freifunk-Troisdorf/meshviewer.git /tmp
+mv /tmp/* /opt/meshviewer/
+rm -rf /tmp/
 cd /opt/meshviewer
 npm install gulp -D yarn 
 yarn global add gulp-cli
