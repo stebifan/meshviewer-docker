@@ -19,8 +19,8 @@ RUN npm install --global grunt-cli && \
 
 WORKDIR /opt/meshviewer
 #RUN npm install gulp -D && \
-	yarn && \
-	yarn global add gulp-cli
+#	yarn && \
+#	yarn global add gulp-cli
 
 COPY start.sh /
 RUN chmod +x /start.sh
