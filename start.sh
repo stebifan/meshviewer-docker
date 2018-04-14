@@ -1,5 +1,6 @@
 #!/bin/sh
 git clone https://github.com/Freifunk-Troisdorf/meshviewer.git /tmp
+rm -rf /opt/meshviewer/
 mv /tmp/* /opt/meshviewer/
 rm -rf /tmp/
 cd /opt/meshviewer
